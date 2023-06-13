@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="App.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 id="heading">Budget <span>App</span></h1>
+    
+    <div class="expenseFlex">
+    <div class="form">
+        <div class="formFlex">
+        <label for="">Due Date*
+            <input type="date" name="" id="date" placeholder="">
+        </label>
+
+        <label for="">Expense
+            <input type="number" name="" id="expense" placeholder="$">
+        </label>
+
+        <label for="">Category
+            <select name="category" id="category">
+                <option value="Cost of Services Provided">Cost of Services Provided</option>
+                <option value="restaurant">Restaurant</option>
+                <option value="Sports">Sports</option>
+                <option value="Rent">Rent</option>
+                <option value="Shopping">Shoppig</option>
+                <option value="Food">Food items</option>
+            </select>
+        </label>
+
+        <label for="">Description
+            <textarea name="" id="description" cols="25" rows="2">
+
+            </textarea>
+        </label>
+
+        <label for="">Payment Date*
+            <input type="date" name="" id="payment">   
+        </label>
+        <button id="addExpenseBtn" onclick="addBudget(),addExpense()">Add expense</button>
+    </div>
+
+        <div class="form2 flex">
+            <h2>Budget</h2>
+            <input type="text" name="" id="AddBudget"> 
+            <button id="addExpenseBtn" >Add Budget</button>
+            </div>
+
+    </div>
+
+<!-- Expense Details -->
+<div id="expenseDet">
+
+</div>
+
+</div>      
+
+</body>
+
+</html>
